@@ -37,7 +37,8 @@
                     <td>" . $value["fonction"] . "</td>
                     <td><img src=images/" . $value["photo"] . "></td>
                     <td>
-                        <a href='delete/deleteConfirm.php?matricule=".$value["matricule"]."'>Delete</a>
+                        <a class='btn btn-danger' href='deleteConfirm.php?matricule=".$value["matricule"]."'>Delete</a>
+                        <a class='btn btn-primary' href='edit.php?matricule=".$value["matricule"]."'>Edit</a>
                     </td>
                     ";
                     echo "</tr>";
