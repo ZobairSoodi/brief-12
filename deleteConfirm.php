@@ -17,7 +17,7 @@
         <h1>Are you sure you wanna delete the employee with the id: <?php echo $matr?> ?</h1>
         <div>
             <a class="btn btn-outline-danger" href='delete.php?matricule=<?php echo $matr?>'>Yes, Delete</a>
-            <a class="btn btn-outline-secondary" href="../index.php">No, Keep</a>
+            <a class="btn btn-outline-secondary" href="index.php">No, Keep</a>
         </div>
     </div>
 </body>

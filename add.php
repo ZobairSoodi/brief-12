@@ -17,4 +17,5 @@
     )";
     move_uploaded_file($tempfile, "images/$filename");
     $conn->query($sql);
+    header("location: index.php");
 ?>
