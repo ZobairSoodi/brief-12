@@ -16,9 +16,14 @@
         <a class="nav-link" href="#">Search</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <form action="index.php" method="POST" class="form-inline my-2 my-lg-0">
+      <select style="height:40px !important; border-radius:7px;" name="select">
+        <option value="matricule">Matricule</option>
+        <option value="nom">Nom</option>
+        <option value="departemnt">Departement</option>
+      </select>
+      <input name="search_input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button name="search_btn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>

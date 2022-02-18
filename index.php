@@ -25,7 +25,17 @@
         </thead>
         <tbody>
             <?php 
-                $result = $conn->query("Select * from employe");
+                if(isset($_POST["search_btn"])){
+                    $select = $_POST["select"];
+                    $input = $_POST["search_input"];
+                    
+                    $sql = "SELECT * FROM employe
+                    WHERE $select LIKE '%$input%'";
+                    $result = $conn->query($sql);
+                }
+                else{
+                    $result = $conn->query("Select * from employe");
+                }
                 foreach ($result as $key => $value) {
                     echo "<tr>
                     <td>" . $value["matricule"] . "</td>
